@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+.container {
+  position: relative;/*定好容器相对位置*/
+  width: 100%;
+  max-width: 400px;/*容器不能多于400px*/
+}/*定容器*/
+
+.container img {
+  width: 100%;
+  height: auto;/*同上，图片高度自适应*/
+}/*定图片*/
+
+.container .btn {
+  position: absolute;/*绝对定位，子绝父相（好6的口诀）*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  color: rgb(171, 80, 80);
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+}/*定按钮的基本样式*/
+
+.container .btn:hover {
+  background-color: black;
+  color: white;
+}/*定按钮的动画*/
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        <img src="https://s41.ax1x.com/2026/09/17/pnKDkb4.jpg" alt="Snow" style="width:100%">
+        <button class="btn" onclick="alert('达咩！！！')">涩图</button>
+        </div>
+    </body>
+</html>
